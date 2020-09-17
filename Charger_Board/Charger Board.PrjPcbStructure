@@ -1,0 +1,4 @@
+Record=TopLevelDocument|FileName=TopLevel.SchDoc
+Record=SheetSymbol|SourceDocument=TopLevel.SchDoc|Designator=Connectors|SchDesignator=Connectors|FileName=Connectors.SchDoc|SymbolType=Normal|RawFileName=Connectors.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=TopLevel.SchDoc|Designator=Interlock|SchDesignator=Interlock|FileName=Interlock.SchDoc|SymbolType=Normal|RawFileName=Interlock.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=TopLevel.SchDoc|Designator=uController|SchDesignator=uController|FileName=uController.SchDoc|SymbolType=Normal|RawFileName=uController.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
