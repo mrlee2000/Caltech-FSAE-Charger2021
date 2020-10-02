@@ -76,7 +76,7 @@ DocumentUniqueId=CHQYRDJY
 
 [Document3]
 DocumentPath=uController.SchDoc
-AnnotationEnabled=1
+AnnotationEnabled=0
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -93,7 +93,7 @@ DocumentUniqueId=BVAMWZME
 
 [Document4]
 DocumentPath=Interlock.SchDoc
-AnnotationEnabled=1
+AnnotationEnabled=0
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -110,7 +110,7 @@ DocumentUniqueId=PQGJCSKP
 
 [Document5]
 DocumentPath=Connectors.SchDoc
-AnnotationEnabled=1
+AnnotationEnabled=0
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -127,7 +127,7 @@ DocumentUniqueId=TQDQFYMG
 
 [Document6]
 DocumentPath=PartsTemplate.SchDoc
-AnnotationEnabled=1
+AnnotationEnabled=0
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -144,7 +144,7 @@ DocumentUniqueId=ATPEBGCI
 
 [Document7]
 DocumentPath=TopLevel.SchDoc
-AnnotationEnabled=1
+AnnotationEnabled=0
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -166,7 +166,7 @@ AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=-1
+AnnotateOrder=6
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -183,7 +183,7 @@ AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=-1
+AnnotateOrder=7
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -194,7 +194,7 @@ GenerateClassCluster=0
 DocumentUniqueId=PZUDGIBM
 
 [Document10]
-DocumentPath=ChargerPowerSchematic2021.PcbLib
+DocumentPath=ChargerPowerBuck2021.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -208,10 +208,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=NUPEVGRL
+DocumentUniqueId=HXQAXZDC
 
 [Document11]
-DocumentPath=ChargerPowerSchematic2021.SchLib
+DocumentPath=ChargerPowerBuck2021.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -225,7 +225,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=AHEVZLKK
+DocumentUniqueId=SWJKNMLV
 
 [Configuration1]
 Name=Sources
