@@ -74,11 +74,11 @@ Control Pilot Circuitry
 * Control Pilot is a 12V signal 
   * 2.74k resistor drops it to 9V when the charger is connected to the charging station - activates the wave generator which will transmit the PWM signal we want to read
   * Charging is activated when the 1.3k resistor is connected to ground - drops to 6V
-  * No ventilation for our vehicle
-  * Using an op amp in a buffer configuration (2020-10-01: The op amp currently on the schematic will change)
-   * Meant to source the current necessary to drive the output without drawing current from the input
-   * Station is sensitive to changes in voltage - don’t want to induce a voltage drop
-   * Voltage divider to step from 5V output of op amp to 3.3V needed for microcontroller
+* No ventilation for our vehicle
+* Using an op amp in a buffer configuration (2020-10-01: The op amp currently on the schematic will change)
+  * Meant to source the current necessary to drive the output without drawing current from the input
+  * Station is sensitive to changes in voltage - don’t want to induce a voltage drop
+  * Voltage divider to step from 5V output of op amp to 3.3V needed for microcontroller
 * See J1772 Schematic
 
 Proximity Pilot
