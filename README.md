@@ -50,23 +50,41 @@ System Connections
  
 
 Power Circuitry
-* Input is +12V from the charger box - needs to be stepped down to 3.3V for the microcontroller
-* Buck converter takes in 12V and outputs 5V, linear regulator takes in 5V and outputs 3.3V
-* From EE Lead, "Buck converters are much more efficient than linear regulators, but they are also much noisier. For a 24V to 5V 1A output buck converter, you'll tend to see efficiencies at 85%+ but with output voltage ripples at 3% or more. By using a buck converter in combination with a linear regulator, we can have most of the voltage drop occur in the high efficiency but noisy buck and the last of the voltage drop in the less efficient but clean linear regulator, so that we get the best of both methods and balance out their downsides"
+* 24V comes from an external battery - since the board is not on the vehicle we have to power it externally
+* Buck converter takes 24V and steps it down to 5V
+  * Very efficient (almost 80%) but noisy
+  * Buck was designed using TI Webench
+* Linear Regulator takes 5V and steps it down to 3.3V
+  * Less efficient, but not noisy
+* Try to balance the pros of both converters with their cons
+
 
 The buck converter was designed using TI's Webench Program. The files generated are found in the TI_Webench_Buck folder.
  
 
 Enable Line Circuitry
-* Use a solid state relay to control line (low-side)
+* Using a mechanical relay to open and close the enable line
+  * Open and closed by the microcontroller
+* Mechanical bc we're not 100% sure what the ground reference of the enable relay - block diagram is unclear
+* Have an LED in parallel so we know when the line is closed
 * See Enable Line schematic
  
 
 Control Pilot Circuitry
-* No ventilation, so R2 should not be changed
-* Use optoisolator as detector, low side solid state relay
+* Control Pilot is a 12V signal 
+  * 2.74k resistor drops it to 9V when the charger is connected to the charging station - activates the wave generator which will transmit the PWM signal we want to read
+  * Charging is activated when the 1.3k resistor is connected to ground - drops to 6V
+* No ventilation for our vehicle
+* Using an op amp in a buffer configuration (2020-10-01: The op amp currently on the schematic will change)
+  * Meant to source the current necessary to drive the output without drawing current from the input
+  * Station is sensitive to changes in voltage - don’t want to induce a voltage drop
+  * Voltage divider to step from 5V output of op amp to 3.3V needed for microcontroller
 * See J1772 Schematic
 
 Proximity Pilot
-* R4 and R5 are suitable for our purposes
+* Charging station measures differences between the proximity detection and the control pilot
+* Resistor values are SAE standard
+* On station - button, connects PP to GND
+  * When the charger board sees more voltage drop across the 2.74k resistor, knows that the station will be disconnected - stop current flow
+  * Avoids arcing 
 * See J1772 Schematic
